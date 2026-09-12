@@ -14,7 +14,7 @@ namespace Os {
 namespace Baremetal {
 namespace File {
 
-BaremetalFile::BaremetalFile(const BaremetalFile& other) {
+BaremetalFile::BaremetalFile(const BaremetalFile& other) : FileInterface(other) {
     this->helpAssign(other);
 }
 
